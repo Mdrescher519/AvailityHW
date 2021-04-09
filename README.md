@@ -1,5 +1,13 @@
 # AvailityHW
 
+Required to run:<br/>
+Java 11.0.10<br/>
+Angular CLI 11.2.7<br/>
+Node 12.0<br/>
+npm 6.9.0<br/>
+Apache Maven 3.8.1<br/>
+<br/>
+
 -- Spring Boot --<br/>
 Run on port 8080<br/>
 cd /av-api<br/>
