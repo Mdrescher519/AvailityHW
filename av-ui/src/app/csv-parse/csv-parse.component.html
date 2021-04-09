@@ -1,0 +1,27 @@
+<form [formGroup]="uploadForm" (ngSubmit)="onUpload()">
+  <div class="input-group mb-3">
+    <div class="custom-file">
+      <input type="file" name="file" class="custom-file-input" (change)="selectFile($event)">
+      <label class="custom-file-label" *ngIf=!isFileChosen>Choose file</label>
+      <label class="custom-file-label" *ngIf=isFileChosen>{{fileName}}</label>
+    </div>
+    <div class="input-group-append">
+      <button class="input-group-text" type="submit">Upload</button>
+    </div>
+  </div>
+</form>
+
+<div>
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let company of companies">
+        <td>
+          {{company}}
+        </td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="onDownload(company)">Download CSV</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

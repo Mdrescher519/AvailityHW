@@ -1,0 +1,71 @@
+<form [formGroup]="userRegForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>First and last name</label>
+    <div class="form-group input-group">
+      <input type="text" class="form-control" placeholder="Bob" formControlName="firstName">
+      <input type="text" class="form-control" placeholder="Smith" formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <label>NPI number</label>
+      <input type="number" class="form-control" placeholder="1234567890" formControlName="npiNumber">
+    </div>
+
+    <div class="form-group">
+      <label>Address</label>
+      <input type="tel" class="form-control" placeholder="123 Fake St" formControlName="address">
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" class="form-control" placeholder="(555) 555-5555" formControlName="phone">
+    </div>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" class="form-control" placeholder="name@example.com" formControlName="email">
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="!userRegForm.valid">Submit</button>
+</form>
+
+<button type="button" class="btn btn-danger" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">TOP SECRET!
+</button>
+<hr>
+<div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+  <h4>List of all users</h4>
+  <div class="well well-lg card card-block card-header">
+    <table class="table table-striped">
+      <thead>
+        <th scope="col" *ngFor="let header of tableHeader; let i = index">
+          {{tableHeader[i]}}
+        </th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>
+            {{users[i].userId}}
+          </td>
+          <td>
+            {{users[i].firstName}}
+          </td>
+          <td>
+            {{users[i].lastName}}
+          </td>
+          <td>
+            {{users[i].npiNumber}}
+          </td>
+          <td>
+            {{users[i].address}}
+          </td>
+          <td>
+            {{users[i].phone}}
+          </td>
+          <td>
+            {{users[i].email}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

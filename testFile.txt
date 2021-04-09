@@ -1,0 +1,17 @@
+User Id, First Name, Last Name, Version, Insurance Company
+user1, bob, jones, 1, company a
+user1, bob, jones, 7, company a
+user2, bob, smith, 2, company a
+user3, jill, smith, 3, company a
+user4, alex, smith, 3, company a
+user5, john, johnson, 2, company a
+user5, john, johnson, 7, company a
+user6, john, jones, 1, company a
+user7, jane, doe, 2, company b
+user8, jane, smith, 3, company b
+user9, bill, green, 4, company b
+user10, alex, green, 4, company b
+user10, alex, green, 7, company b
+user11, john, green, 5, company b
+user12, john, schmidt, 4, company b
+user12, john, schmidt, 7, company b

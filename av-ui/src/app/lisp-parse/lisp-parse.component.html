@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">LISP code validator:</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea" [formControl]="lisp"></textarea>
+  </div>
+  <button type="submit" [disabled]="!lisp.valid">Submit</button>
+</form>
+<div>
+  {{validation.message}}
+</div>

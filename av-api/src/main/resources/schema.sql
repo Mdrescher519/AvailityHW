@@ -1,0 +1,8 @@
+CREATE TABLE enrollees (
+  id BIGINT IDENTITY,
+  userId VARCHAR(255) NOT NULL,
+  firstName VARCHAR(255) NOT NULL,
+  lastName VARCHAR(255) NOT NULL,
+  version INTEGER NOT NULL,
+  company VARCHAR(255) NOT NULL
+);
