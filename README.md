@@ -6,6 +6,7 @@ Angular CLI 11.2.7<br/>
 Node 12.0<br/>
 npm 6.9.0<br/>
 Apache Maven 3.8.1<br/>
+H2 Database 1.4.2<br/>
 <br/>
 
 -- Spring Boot --<br/>
