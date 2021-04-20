@@ -16,7 +16,7 @@ export class CsvParseComponent implements OnInit {
   isFileChosen: boolean = false;
   fileName: string = '';
   file: File;
-  companies: String[] = [];
+  companies: string[] = [];
 
   ngOnInit() {
     this.uploadForm = this.formBuilder.group({
